@@ -1,4 +1,6 @@
-export default function Theme(props: { theme: string }) {
+import { memo } from "react";
+
+function Theme(props: { theme: string }) {
   return (
     <div className="mt-6 border-solid p-5 border-4 border-red-600 rounded">
       <h1 className="text-3xl font-bold">Theme: {props.theme}</h1>
@@ -6,3 +8,5 @@ export default function Theme(props: { theme: string }) {
     </div>
   );
 }
+
+export default memo(Theme);
