@@ -1,6 +1,6 @@
 export default function HeavyComponent() {
   const items = [];
-  for (let i = 0; i < 2000; i++) {
+  for (let i = 0; i < 100; i++) {
     items.push(<li key={i}>Item {i}</li>);
   }
 
